@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乖乖宝贝生日快乐</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+</head>
+
+<body>
+    <div class="rectangle">
+        <p id="text"></p>
+    </div>
+
+    <div class="time">
+        <p id="result"></p>
+    </div>
+
+    <div class="letter">
+        <div class="button">给宝贝的信➡️</div>
+        <a href="letter.html">
+            <p>💌</p>
+        </a>
+    </div>
+
+
+
+    <script>
+        var date = new Date();
+        var birthday = new Date("2023-02-16");
+        var targetDate = new Date("November 1, 2022");
+        var currentDate = new Date();
+        var day = new Date("2023-02-16");
+        console.log(date);
+        console.log(day);
+        if (date < day) { console.log(1) }
+        var daysBetween = (currentDate - targetDate) / (1000 * 60 * 60 * 24);
+        document.getElementById("result").innerHTML = "和西西宝贝在一起" + Math.floor(daysBetween) + "天啦！🙌";
+        console.log(date)
+        if (date.getDate() === birthday.getDate() &&
+            date.getMonth() === birthday.getMonth() && date.getFullYear() === birthday.getFullYear()) { document.getElementById("text").innerHTML = "🙌今天是宝贝的生日，祝我的宝贝生日快乐！🙌"; }
+        else {
+            document.getElementById("text").innerHTML = "😆祝我的宝贝天天开心😆";
+        } 
+    </script>
+</body>
+
+</html>

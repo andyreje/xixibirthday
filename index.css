@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    height: 100vh;
+    background-color: #f48c69;
+    font-family: LiSong Pro Light
+}
+
+.rectangle {
+    background-color: rgb(236, 229, 229);
+    width: 70%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(96, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 35px;
+
+}
+
+.time {
+    display: flex;
+    background-color: rgb(236, 229, 229);
+    width: 70%;
+    height: 10%;
+    border-radius: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+    height: 10%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    width: 45%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 229, 229);
+}
+
+.letter a {
+    display: flex;
+    width: 45%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 229, 229);
+}
